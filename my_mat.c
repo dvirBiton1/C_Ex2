@@ -1,5 +1,4 @@
 #include <stdio.h>
-#define infinty 2147483647
 #include "my_mat.h"
 #define N 10
 
@@ -57,7 +56,7 @@ void printMat(int arr[N][N])
 int min(int x, int y)
 {
 
-    return (x >= y) ? y : x;
+    return (x > y) ? y : x;
 }
 
 void algorithm(int arr[N][N])

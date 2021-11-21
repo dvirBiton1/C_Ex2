@@ -16,7 +16,6 @@ int main()
         {
             A(matrix);
             // printMat(matrix);
-            printf("**********\n");
             algorithm(matrix);
             // printMat(matrix);
         }
