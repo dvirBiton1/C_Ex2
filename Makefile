@@ -1,7 +1,7 @@
 .PHONY = all clean
 CC=gcc
 OBJ=my_mat.o  main.o
-NAME = Ex2
+NAME = connections
 CFLAGS = -Wall -Werror -g
 
 all : $(OBJ)
