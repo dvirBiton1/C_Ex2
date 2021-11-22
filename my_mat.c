@@ -55,6 +55,14 @@ void printMat(int arr[N][N])
 
 int min(int x, int y)
 {
+    if (x == 0)
+    {
+        return y;
+    }
+    else if (y == 0)
+    {
+        return x;
+    }
 
     return (x > y) ? y : x;
 }
@@ -68,7 +76,21 @@ void algorithm(int arr[N][N])
         {
             for (size_t j = 0; j < N; j++)
             {
-                arr[i][j] = min(arr[i][j], (arr[i][k] + arr[k][j]));
+                if (i == j)
+                {
+                    arr[i][j] = 0;
+                }
+                else if (i == k || j == k ){
+                    arr[i][j] = arr[i][j];
+                }
+                else{
+                    int temp = arr[i][k] + arr[k][j];
+                    if (arr[i][k] == 0 || arr[k][j] == 0)
+                    {
+                        temp = 0;
+                    }
+                    arr[i][j] = min(arr[i][j], temp);
+                }
             }
         }
     }
