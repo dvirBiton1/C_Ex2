@@ -4,7 +4,8 @@ OBJ=my_mat.o  main.o
 NAME = connections
 CFLAGS = -Wall -Werror -g
 
-all : $(OBJ)
+all : $(NAME)
+$(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 my_mat.o: my_mat.c my_mat.h
 	$(CC) $(CFLAGS) -c my_mat.c
