@@ -6,9 +6,10 @@ CFLAGS = -Wall -Werror -g
 
 all : $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
-
 my_mat.o: my_mat.c my_mat.h
+	$(CC) $(CFLAGS) -c my_mat.c
 main.o: main.c my_mat.h
+	$(CC) $(CFLAGS) -c main.c
 
 clean:
-	rm -f *.o *.a *.so my_mat main
+	rm -f *.o *.a *.so my_mat

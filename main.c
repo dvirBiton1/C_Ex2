@@ -29,7 +29,8 @@ int main()
             {
                 printf("False\n");
             }
-            else{
+            else
+            {
                 printf("True\n");
             }
         }
@@ -41,6 +42,10 @@ int main()
             C(x, y, matrix);
         }
         break;
+            default:
+            {
+                break;
+            }
         }
 
     } while (ch != 'D');
