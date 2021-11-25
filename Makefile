@@ -13,4 +13,4 @@ main.o: main.c my_mat.h
 	$(CC) $(CFLAGS) -c main.c
 
 clean:
-	rm -f *.o *.a *.so connections
+	rm -f *.o *.a connections
