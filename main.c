@@ -15,10 +15,10 @@ int main()
         case 'A':
         {
             A(matrix);
-            // printMat(matrix);
-            // printf("************\n");
+            printMat(matrix);
+            printf("************\n");
             algorithm(matrix);
-            // printMat(matrix);
+            printMat(matrix);
         }
         break;
         case 'B':
